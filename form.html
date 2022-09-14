@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+        
+    <nav>
+       <div class="nav-left">
+        <ul>
+            <li><img style="height: 35px;" src="assets/logo.dumbways.png" alt="logo"></li>
+            <li>
+                <a style="font-weight: bolder; color: black;" href="home.html">Home</a>
+            </li>
+            <li>
+                <a style="color: black;" href="home.html">My Project</a>
+            </li>
+        </ul>
+       </div>
+
+        <div class="nav-right">
+            <a href="#">Contact Me</a>
+        </div>
+    </nav>
+
+    <form>
+        <h1>GET IN TOUCH</h1>
+
+        <div>
+            <label for="input-name">Name</label>
+            <input type="text" id="input-name" required>
+        </div>
+
+        <div>
+            <label for="input-email">Email</label>
+            <input type="text" id="input-email" required>
+        </div>
+
+        <div>
+            <label for="input-phone">Phone Number</label>
+            <input type="text" id="input-phone" required>
+        </div>
+        
+        <div>
+            <label for="input-subject">Subject</label>
+            <select id="input-subject">
+                <option value="" hidden></option>
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>Fullstack</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="input-message">Your Message</label>
+            <textarea rows="5" cols="10" id="input-message"></textarea>
+        </div>
+
+        <div>
+            <button type="button" onclick="submitData()">Submit</button>
+        </div>
+    </form>
+
+    <script src="form.js"></script>
+
+</body>
+</html>
